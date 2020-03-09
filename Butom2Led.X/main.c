@@ -56,6 +56,16 @@ void main(void)
         LED1 = 0;
         LED2 = 1;
         }
+        
+        if (BOTAO1 && BOTAO2 ==1)
+         {
+        __delay_ms(2000);
+        LED1 = 1;
+        LED2 = 0;
+        __delay_ms(2000);
+        LED1 = 0;
+        LED2 = 1;
+        } 
                 
     }     
           
