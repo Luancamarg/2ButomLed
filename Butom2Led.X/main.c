@@ -34,9 +34,29 @@ void main(void)
         LED1 = 1;
         LED2 = 0;
        __delay_ms(500);
-           
         LED1 = 0;
-        LED2 = 1;   
+        LED2 = 1;
+        
+        if(BOTAO1 == 1)
+        {
+        __delay_ms(1000);
+        LED1 = 1;
+        LED2 = 0;
+        __delay_ms(1000);
+        LED1 = 0;
+        LED2 = 1;
+        }
+        
+        if(BOTAO2 == 1)
+        {
+        __delay_ms(1000);
+        LED1 = 1;
+        LED2 = 0;
+        __delay_ms(1000);
+        LED1 = 0;
+        LED2 = 1;
+        }
+                
     }     
           
     return;
